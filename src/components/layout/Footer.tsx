@@ -23,10 +23,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/indraprastha_design_studio?utm_source=qr&igsh=aGhiMHRwbHJ3azNu", label: "Instagram" },
+  // { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  // { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  // { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
 ];
 
 export const Footer = () => {
@@ -37,16 +37,14 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-sm flex items-center justify-center">
-                <span className="text-primary-foreground font-serif text-2xl font-semibold">T</span>
-              </div>
-              <div>
-                <span className="font-serif text-2xl tracking-wide">TESOR</span>
-                <span className="block text-xs tracking-[0.3em] uppercase text-cream/60">Designs</span>
-              </div>
+              <img
+                src="/images/logo.jpeg"
+                alt="TESOR Designs"
+                className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-cream/70 text-sm leading-relaxed mb-6 max-w-sm">
-              Crafting luxurious interiors that blend timeless elegance with modern functionality. 
+              Crafting luxurious interiors that blend timeless elegance with modern functionality.
               Every space tells a story of refined taste and attention to detail.
             </p>
             <div className="flex gap-4">
@@ -107,20 +105,20 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+919916940479"
+                  href="tel:+917017186660"
                   className="flex items-center gap-3 text-sm text-cream/70 hover:text-primary transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+91 99169 40479</span>
+                  <span>+91 70171 86660</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:hello@tesordesigns.com"
+                  href="mailto:Indraprasthastudio08@gmail.com"
                   className="flex items-center gap-3 text-sm text-cream/70 hover:text-primary transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>hello@tesordesigns.com</span>
+                  <span>Indraprasthastudio08@gmail.com</span>
                 </a>
               </li>
             </ul>

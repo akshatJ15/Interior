@@ -1,6 +1,5 @@
 import { Lightbulb, Palette, Hammer, Home } from "lucide-react";
 import { motion } from "framer-motion";
-import studioImage from "@/assets/studio.jpg";
 
 const steps = [
   {
@@ -92,7 +91,7 @@ export const ProcessSection = () => {
               transition={{ duration: 0.3 }}
             >
               <img
-                src={studioImage}
+                src="/images/hero/3.jpeg"
                 alt="Our Design Studio"
                 className="w-full h-full object-cover"
               />

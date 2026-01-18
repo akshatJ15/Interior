@@ -1,10 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import projectResidence1 from "@/assets/project-residence-1.jpg";
-import projectResidence2 from "@/assets/project-residence-2.jpg";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
 
 const projects = [
   {
@@ -13,7 +9,7 @@ const projects = [
     location: "Bangalore",
     area: "4,500 sq ft",
     description: "A contemporary residence that seamlessly blends modern luxury with timeless elegance.",
-    image: projectResidence1,
+    image: "/images/residences/1.jpeg",
     slug: "treasures-of-time",
   },
   {
@@ -22,7 +18,7 @@ const projects = [
     location: "Bangalore",
     area: "3,200 sq ft",
     description: "Japandi-inspired interiors that create a serene and harmonious living environment.",
-    image: projectResidence2,
+    image: "/images/residences/2.jpeg",
     slug: "zen-home",
   },
   {
@@ -31,7 +27,7 @@ const projects = [
     location: "Bangalore",
     area: "5,800 sq ft",
     description: "Luxury lakeside residence with panoramic views and bespoke interiors.",
-    image: hero1,
+    image: "/images/residences/3.jpeg",
     slug: "embassy-lake-terraces",
   },
   {
@@ -40,7 +36,7 @@ const projects = [
     location: "Chennai",
     area: "4,000 sq ft",
     description: "A travel-inspired home that tells stories from around the world.",
-    image: hero2,
+    image: "/images/residences/4.jpeg",
     slug: "voyagers-retreat",
   },
   {
@@ -49,7 +45,7 @@ const projects = [
     location: "Bangalore",
     area: "3,500 sq ft",
     description: "Minimalist luxury with warm textures and curated art collection.",
-    image: projectResidence1,
+    image: "/images/residences/5.jpeg",
     slug: "olavu",
   },
   {
@@ -58,7 +54,7 @@ const projects = [
     location: "Mumbai",
     area: "4,200 sq ft",
     description: "Heritage-inspired design with contemporary sensibilities.",
-    image: projectResidence2,
+    image: "/images/residences/6.jpeg",
     slug: "kaalam",
   },
 ];
@@ -69,7 +65,7 @@ const Residences = () => {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[350px] overflow-hidden">
         <motion.img
-          src={hero1}
+          src="/images/hero/5.jpeg"
           alt="Residential Interior"
           className="w-full h-full object-cover"
           initial={{ scale: 1.2 }}

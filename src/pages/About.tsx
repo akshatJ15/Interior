@@ -1,8 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import studioImage from "@/assets/studio.jpg";
-import hero2 from "@/assets/hero-2.jpg";
 
 const team = [
   {
@@ -47,7 +45,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
         <motion.img
-          src={studioImage}
+          src="/images/hero/7.jpeg"
           alt="Our Design Studio"
           className="w-full h-full object-cover"
           initial={{ scale: 1.2 }}
@@ -125,13 +123,23 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <motion.img
-                src={hero2}
-                alt="Luxury interior"
-                className="w-full aspect-[4/5] object-cover rounded-sm"
+              <motion.div
+                className="relative aspect-[4/5] rounded-sm overflow-hidden bg-espresso shadow-xl"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-              />
+              >
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="/images/hero/8.jpeg"
+                >
+                  <source src="/images/studio-video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </motion.div>
               <motion.div
                 className="absolute -bottom-6 -left-6 w-32 h-32 border-2 border-primary rounded-sm -z-10"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -190,6 +198,42 @@ const About = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Studio Video Section */}
+      <section className="section-luxury">
+        <div className="container-luxury">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="text-label mb-4 block">Behind the Scenes</span>
+            <h2 className="heading-section text-foreground mb-4">
+              Our Studio in <span className="italic text-primary">Action</span>
+            </h2>
+            <div className="divider-luxury" />
+            <p className="text-body mt-6 max-w-2xl mx-auto">
+              Take a glimpse into our creative process and state-of-the-art manufacturing facility where design vision becomes reality.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="relative aspect-video rounded-sm overflow-hidden bg-espresso shadow-2xl"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <img
+              src="/images/hero/8.jpeg"
+              alt="Our Studio"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
         </div>
       </section>
 

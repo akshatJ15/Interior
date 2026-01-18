@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import hero1 from "@/assets/hero-1.jpg";
 
 export const CTASection = () => {
   return (
@@ -14,7 +13,7 @@ export const CTASection = () => {
         transition={{ duration: 1.5 }}
       >
         <img
-          src={hero1}
+          src="/images/hero/4.jpeg"
           alt="Interior design"
           className="w-full h-full object-cover"
         />

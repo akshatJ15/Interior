@@ -2,18 +2,16 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
 
 const slides = [
   {
-    image: hero1,
+    image: "/images/hero/1.jpeg",
     title: "Luxury in",
     highlight: "every detail",
     subtitle: "Transforming spaces into extraordinary experiences through thoughtful design and impeccable craftsmanship.",
   },
   {
-    image: hero2,
+    image: "/images/hero/2.jpeg",
     title: "Where elegance",
     highlight: "meets comfort",
     subtitle: "Creating timeless interiors that reflect your unique personality and lifestyle.",

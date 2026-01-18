@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import projectSpa from "@/assets/project-spa.jpg";
-import projectSalon from "@/assets/project-salon.jpg";
-import projectRestaurant from "@/assets/project-restaurant.jpg";
 
 const categories = ["All", "Spas & Salons", "Restaurants", "Cafes"];
 
@@ -15,7 +12,7 @@ const projects = [
     category: "Spas & Salons",
     location: "Bangalore",
     description: "A serene wellness sanctuary inspired by ancient healing traditions.",
-    image: projectSpa,
+    image: "/images/commercial/1.jpeg",
     slug: "tattva-spa",
   },
   {
@@ -24,7 +21,7 @@ const projects = [
     category: "Spas & Salons",
     location: "Mumbai",
     description: "Contemporary salon design that reflects the brand's global identity.",
-    image: projectSalon,
+    image: "/images/commercial/2.jpeg",
     slug: "toni-guy",
   },
   {
@@ -33,7 +30,7 @@ const projects = [
     category: "Spas & Salons",
     location: "Hyderabad",
     description: "Elegant beauty salon with Parisian-inspired interiors.",
-    image: projectSalon,
+    image: "/images/commercial/3.jpeg",
     slug: "diorette-salon",
   },
   {
@@ -42,7 +39,7 @@ const projects = [
     category: "Restaurants",
     location: "Belgaum",
     description: "Fine dining experience with warm, inviting ambiance.",
-    image: projectRestaurant,
+    image: "/images/commercial/4.jpeg",
     slug: "saffron-restaurant",
   },
   {
@@ -51,7 +48,7 @@ const projects = [
     category: "Restaurants",
     location: "Bangalore",
     description: "Heritage building transformed into an artisanal dining destination.",
-    image: projectRestaurant,
+    image: "/images/commercial/5.jpeg",
     slug: "white-garden",
   },
   {
@@ -60,7 +57,7 @@ const projects = [
     category: "Cafes",
     location: "Chennai",
     description: "Minimalist Scandinavian-themed cafe with cozy charm.",
-    image: projectSpa,
+    image: "/images/commercial/6.jpeg",
     slug: "butter-and-crust",
   },
   {
@@ -69,7 +66,7 @@ const projects = [
     category: "Spas & Salons",
     location: "Bangalore",
     description: "Modern grooming space with industrial chic aesthetics.",
-    image: projectSalon,
+    image: "/images/commercial/7.jpeg",
     slug: "habit-salon",
   },
   {
@@ -78,7 +75,7 @@ const projects = [
     category: "Cafes",
     location: "Bangalore",
     description: "Whimsical cafe design with Instagram-worthy interiors.",
-    image: projectRestaurant,
+    image: "/images/commercial/8.jpeg",
     slug: "pink-verranda",
   },
 ];
@@ -95,7 +92,7 @@ const Commercial = () => {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[350px] overflow-hidden">
         <motion.img
-          src={projectRestaurant}
+          src="/images/hero/6.jpeg"
           alt="Commercial Interior"
           className="w-full h-full object-cover"
           initial={{ scale: 1.2 }}

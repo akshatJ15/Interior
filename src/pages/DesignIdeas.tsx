@@ -1,11 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import projectResidence1 from "@/assets/project-residence-1.jpg";
-import projectResidence2 from "@/assets/project-residence-2.jpg";
-import projectSpa from "@/assets/project-spa.jpg";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
 
 const categories = ["All", "Living Room", "Bedroom", "Kitchen", "Bathroom", "Outdoor"];
 
@@ -14,37 +9,37 @@ const ideas = [
     id: 1,
     title: "Warm Minimalist Living Room",
     category: "Living Room",
-    image: projectResidence1,
+    image: "/images/design-ideas/1.jpeg",
   },
   {
     id: 2,
     title: "Japandi Bedroom Retreat",
     category: "Bedroom",
-    image: hero2,
+    image: "/images/design-ideas/2.jpeg",
   },
   {
     id: 3,
     title: "Modern Kitchen Design",
     category: "Kitchen",
-    image: projectResidence2,
+    image: "/images/design-ideas/3.jpeg",
   },
   {
     id: 4,
     title: "Spa-Inspired Bathroom",
     category: "Bathroom",
-    image: projectSpa,
+    image: "/images/design-ideas/4.jpeg",
   },
   {
     id: 5,
     title: "Contemporary Living Space",
     category: "Living Room",
-    image: hero1,
+    image: "/images/design-ideas/5.jpeg",
   },
   {
     id: 6,
     title: "Elegant Master Suite",
     category: "Bedroom",
-    image: hero2,
+    image: "/images/design-ideas/6.jpeg",
   },
 ];
 

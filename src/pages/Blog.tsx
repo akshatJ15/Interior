@@ -1,8 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import hero2 from "@/assets/hero-2.jpg";
-import projectResidence1 from "@/assets/project-residence-1.jpg";
 
 const blogPosts = [
   {
@@ -11,7 +9,7 @@ const blogPosts = [
     excerpt: "Discover how to transform your living space into a warm and inviting sanctuary...",
     category: "Interior Tips",
     date: "January 5, 2026",
-    image: projectResidence1,
+    image: "/images/blog/1.jpeg",
     slug: "cozy-living-room-tips",
   },
   {
@@ -20,7 +18,7 @@ const blogPosts = [
     excerpt: "Explore the beautiful fusion of Japanese minimalism and Scandinavian functionality...",
     category: "Design Trends",
     date: "December 28, 2025",
-    image: hero2,
+    image: "/images/blog/2.jpeg",
     slug: "art-of-japandi-design",
   },
   {
@@ -29,7 +27,7 @@ const blogPosts = [
     excerpt: "A comprehensive guide to selecting colors that create the right mood for your space...",
     category: "Color Theory",
     date: "December 15, 2025",
-    image: projectResidence1,
+    image: "/images/blog/3.jpeg",
     slug: "choosing-color-palette",
   },
 ];

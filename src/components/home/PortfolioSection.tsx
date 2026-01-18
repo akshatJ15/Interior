@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import projectResidence1 from "@/assets/project-residence-1.jpg";
-import projectResidence2 from "@/assets/project-residence-2.jpg";
-import projectSpa from "@/assets/project-spa.jpg";
-import projectSalon from "@/assets/project-salon.jpg";
-import projectRestaurant from "@/assets/project-restaurant.jpg";
 
 const categories = ["Featured", "Residences", "Spas & Salons", "Restaurants & Cafes"];
 
@@ -14,7 +9,7 @@ const projects = [
     id: 1,
     title: "Treasures of Time",
     category: "Residential",
-    image: projectResidence1,
+    image: "/images/residences/1.jpeg",
     href: "/residences/treasures-of-time",
     tags: ["Featured", "Residences"],
   },
@@ -22,7 +17,7 @@ const projects = [
     id: 2,
     title: "Zen Home",
     category: "Residential",
-    image: projectResidence2,
+    image: "/images/residences/2.jpeg",
     href: "/residences/zen-home",
     tags: ["Featured", "Residences"],
   },
@@ -30,7 +25,7 @@ const projects = [
     id: 3,
     title: "Tattva Spa",
     category: "Commercial",
-    image: projectSpa,
+    image: "/images/commercial/1.jpeg",
     href: "/commercial/tattva-spa",
     tags: ["Featured", "Spas & Salons"],
   },
@@ -38,7 +33,7 @@ const projects = [
     id: 4,
     title: "Toni & Guy",
     category: "Commercial",
-    image: projectSalon,
+    image: "/images/commercial/2.jpeg",
     href: "/commercial/toni-guy",
     tags: ["Featured", "Spas & Salons"],
   },
@@ -46,7 +41,7 @@ const projects = [
     id: 5,
     title: "Saffron Restaurant",
     category: "Commercial",
-    image: projectRestaurant,
+    image: "/images/commercial/3.jpeg",
     href: "/commercial/saffron-restaurant",
     tags: ["Featured", "Restaurants & Cafes"],
   },
@@ -54,7 +49,7 @@ const projects = [
     id: 6,
     title: "White Garden",
     category: "Commercial",
-    image: projectRestaurant,
+    image: "/images/commercial/4.jpeg",
     href: "/commercial/white-garden",
     tags: ["Restaurants & Cafes"],
   },

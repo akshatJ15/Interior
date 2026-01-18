@@ -6,58 +6,58 @@
 
 @layer base {
   :root {
-    /* Warm luxury palette */
-    --background: 36 33% 97%;
-    --foreground: 24 10% 15%;
+    /* Dark Mode (Moody & Dramatic) palette */
+    --background: 0 0% 7%; /* #121212 Rich Black */
+    --foreground: 0 0% 88%; /* #E0E0E0 Platinum White */
 
-    --card: 36 33% 97%;
-    --card-foreground: 24 10% 15%;
+    --card: 240 11% 13%; /* #1E1E24 Charcoal */
+    --card-foreground: 0 0% 88%;
 
-    --popover: 36 33% 97%;
-    --popover-foreground: 24 10% 15%;
+    --popover: 240 11% 13%;
+    --popover-foreground: 0 0% 88%;
 
-    /* Terracotta/Brown primary */
-    --primary: 24 56% 35%;
-    --primary-foreground: 36 33% 97%;
+    /* Muted Gold/Brass primary accent */
+    --primary: 43 49% 56%; /* #C5A059 Muted Gold */
+    --primary-foreground: 0 0% 7%;
 
-    /* Warm cream secondary */
-    --secondary: 36 25% 92%;
-    --secondary-foreground: 24 10% 15%;
+    /* Charcoal secondary */
+    --secondary: 240 11% 13%; /* #1E1E24 Charcoal */
+    --secondary-foreground: 0 0% 88%;
 
-    --muted: 36 20% 90%;
-    --muted-foreground: 24 10% 40%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 24 40% 45%;
-    --accent-foreground: 36 33% 97%;
+    --accent: 43 49% 56%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 88%;
 
-    --border: 24 15% 85%;
-    --input: 24 15% 85%;
-    --ring: 24 56% 35%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 43 49% 56%;
 
     --radius: 0.25rem;
 
-    /* Custom luxury tokens */
-    --terracotta: 24 56% 35%;
-    --terracotta-light: 24 40% 55%;
-    --cream: 36 33% 97%;
-    --cream-dark: 36 25% 92%;
-    --espresso: 24 30% 20%;
-    --gold: 40 60% 50%;
-    --warm-gray: 24 10% 60%;
+    /* Custom Dark Mode tokens */
+    --terracotta: 43 49% 56%; /* Muted Gold */
+    --terracotta-light: 43 49% 70%;
+    --cream: 0 0% 88%; /* Platinum White */
+    --cream-dark: 0 0% 70%;
+    --espresso: 0 0% 7%; /* Rich Black */
+    --gold: 43 49% 56%;
+    --warm-gray: 0 0% 40%;
     
     /* Typography */
     --font-serif: 'Cormorant Garamond', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 43 49% 56%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 240 11% 13%;
+    --sidebar-accent-foreground: 0 0% 88%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }

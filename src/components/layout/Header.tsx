@@ -27,17 +27,13 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <motion.div
-              className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center"
-              whileHover={{ scale: 1.1, rotate: 5 }}
+            <motion.img
+              src="/images/logo.jpeg"
+              alt="TESOR Designs"
+              className="h-12 w-auto object-contain"
+              whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
-            >
-              <span className="text-primary-foreground font-serif text-xl font-semibold">T</span>
-            </motion.div>
-            <div className="hidden sm:block">
-              <span className="font-serif text-xl tracking-wide text-foreground">TESOR</span>
-              <span className="block text-[10px] tracking-[0.3em] uppercase text-muted-foreground">Designs</span>
-            </div>
+            />
           </Link>
 
           {/* Desktop Navigation */}
