@@ -45,7 +45,7 @@ export const ClientsSection = () => {
         </div>
 
         {/* Awards */}
-        <div className="border-t border-border pt-12">
+        {/* <div className="border-t border-border pt-12">
           <div className="text-center mb-8">
             <span className="text-label">Awards & Recognition</span>
           </div>
@@ -61,7 +61,7 @@ export const ClientsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
